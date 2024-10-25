@@ -88,7 +88,7 @@ function App() {
               <div className="values-list">
                 <button className="icon" data-label="name"
                   onMouseEnter={handleValue}>
-                  <img src={womanSvg} alt="user" id="iconImg" />
+                  <img src={person.gender==="male" ? manSvg :womanSvg  } alt="user" id="iconImg" />
                 </button>
                 <button className="icon" data-label="email"
                   onMouseEnter={handleValue}>
@@ -96,7 +96,7 @@ function App() {
                 </button>
                 <button className="icon" data-label="age"
                   onMouseEnter={handleValue}>
-                  <img src={womanAgeSvg} alt="age" id="iconImg" />
+                  <img src={person.gender==="male" ? manAgeSvg :womanAgeSvg } alt="age" id="iconImg" />
                 </button>
                 <button className="icon" data-label="street"
                   onMouseEnter={handleValue}>
